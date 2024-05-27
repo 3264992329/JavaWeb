@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="h1">h哈哈哈哈1</div>
+    <div class="cla">yeyeyeyeye</div>
+    <div class="cla">hhahahaha</div>
+    <input type="checkbox" name="hobby">电影
+    <input type="checkbox" name="hobby">旅游
+    <input type="checkbox" name="hobby">健身
+
+    <script>
+        /* //获取Element元素
+        var one= document.getElementById("h1");
+        alert(one);
+ */
+        //根据标签获取
+        var three=document.getElementsByTagName("div");
+        for (let index = 0; index < three.length; index++) {
+            alert(three[index]);
+        }
+
+        /* var two=document.getElementsByClassName("cla");
+        alert(two); */
+    </script>
+</body>
+</html>
