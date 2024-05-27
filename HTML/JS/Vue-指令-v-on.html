@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 引入vue -->
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+    <!-- 编写视图层展示 -->
+    <div id="app">
+        <input type="button" value="点击我" v-on:click="handle()">
+    </div>
+
+    <script>
+        //定义Vue对象
+        new Vue({
+            el:"#app", //Vue接管区域
+            data:{
+
+            },
+            methods: {
+                handle:function(){
+                    alert("你点我了一下");
+                }
+            }
+        })
+    </script>
+</body>
+</html>

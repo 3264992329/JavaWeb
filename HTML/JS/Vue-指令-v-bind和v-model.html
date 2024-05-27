@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 引入Vue -->
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        <a v-bind:href="url">链接一</a>
+
+        <input type="text" v-model="url">
+    </div>
+    
+    <script>
+        /* 定义Vue */
+        new Vue({
+            el:"#app",  //vue接管区域
+            data:{
+                url:"https://www.baidu.com"
+            }
+        })
+    </script>
+</body>
+</html>

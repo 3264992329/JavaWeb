@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 引入vue -->
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+    <!-- 编写视图层展示 -->
+    <div id="app">
+        年龄<input type="text" v-model="age">,经判定为:
+        <span v-if="age<=35">年轻人</span>
+        <span v-else-if="age>35&&age<60">中年人</span>
+        <span v-else="age>=60">老年人</span>
+        <br>
+        年龄<input type="text" v-model="age">,经判定为:
+        <span v-show="age<=35">年轻人</span>
+        <span v-show="age>35&&age<60">中年人</span>
+        <span v-show="age>=60">老年人</span>
+    </div>
+
+    <script>
+        //定义Vue对象
+        new Vue({
+            el:"#app", //Vue接管区域
+            data:{
+                age:20
+            },
+            methods: {
+                
+            },
+        })
+    </script>
+</body>
+</html>
