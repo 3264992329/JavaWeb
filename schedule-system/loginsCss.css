@@ -1,0 +1,72 @@
+/* 设置页面的基本样式 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* 标题样式 */
+.ht {
+    color: #333;
+    text-align: center;
+}
+
+/* 表格样式 */
+.tab {
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ltr td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.ipt {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* 按钮样式 */
+.btn1 {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn1:hover {
+    background-color: #0056b3;
+}
+
+/* 链接按钮样式 */
+button.btn1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+button.btn1 a:hover {
+    text-decoration: underline;
+}
+
+/* 提示信息样式 */
+#usernameMsg, #userPwdMsg {
+    color: red;
+    font-size: 12px;
+    margin-left: 10px;
+}
